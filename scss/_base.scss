@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Merriweather', serif;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+header {
+    background-color: $firstBlue;
+    position: fixed;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    
+    li {
+        list-style: none;
+        font-weight: 100;
+        padding: 40px 20px 20px 20px;
+        display: inline-block;
+ 
+    a {
+        text-decoration:none;
+        color:$white;
+
+        &:hover {
+            text-decoration: none;
+            color: $firstRed;
+}
+        }
+    }
+}
+
+
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $firstRed;
+    margin: 25px;
+}
+
+footer{
+    background-color: $firstRed;
+    line-height: 150%;
+    font-size: 15px;
+    padding: 5vh;
+    display: grid;
+    grid-template-areas: 
+        "menu rs"
+        "logo fp";
+    grid-template-columns: 50vw 40vw;
+    grid-template-rows: auto;
+    
+
+    .menuFooter{
+        font-size: 13px;
+        grid-area: menu;
+
+        li {
+            list-style: none;
+            padding: 10px;
+            display:inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+            &hover {
+            color: $firstBlue;
+        }
+    }
+
+    .footerPrincipal {
+    grid-area: fp;
+    text-align: end;
+         }
+
+    .logoFooter {
+    grid-area: logo;
+    color: $firstBlue;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 25px 0px 15px 40px;}
+
+    .rrssFooter {
+    grid-area: rs;
+    text-align: end; }
+
+
+}

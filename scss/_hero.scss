@@ -1,0 +1,36 @@
+%hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 50px;
+    }
+
+.hero {
+    background-image: url(/imgs/home.jpg);
+    @extend %hero;
+
+    &--ClasesRegulares {
+        background-image: url(/imgs/clases-especiales.jpg);
+            @extend %hero;
+        }
+
+    &--Viajes {
+        background-image: url(/imgs/viajes.jpg);
+        @extend %hero;
+    }
+        
+
+    &--ClasesEspeciales {
+    background-image: url(/imgs/clases-online.jpg);
+        @extend %hero;}
+
+    &--Contacto {
+    background-image: url(/imgs/contact.jpg);
+    @extend %hero;}
+
+    &--Inscripcion {
+    background-image: url(/imgs/welcome.jpg);
+    @extend %hero;
+}}
